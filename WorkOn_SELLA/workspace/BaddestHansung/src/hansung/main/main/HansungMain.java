@@ -1,6 +1,8 @@
 package hansung.main.main;
 
+import hansung.campusmap.main.CampusMain;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,7 +18,8 @@ public class HansungMain extends Activity {
 		bt_CampusMap.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				
+				Intent intent = new Intent(getApplicationContext(), CampusMain.class);
+				startActivity(intent);
 				
 			}
 		});

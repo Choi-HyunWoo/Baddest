@@ -22,6 +22,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name="hansung.campusmap.main.CampusMain"
+            android:label="CampusMap" >
+        </activity>
+        <activity
+            android:name="hansung.campusmap.gonghaka.GonghakA_1"
+            android:label="Campus Gonghak A" >
+        </activity>
     </application>
 
 </manifest>
