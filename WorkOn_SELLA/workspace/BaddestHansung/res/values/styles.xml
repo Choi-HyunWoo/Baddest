@@ -31,7 +31,7 @@
         <item name="android:layout_weight">1</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/White</item>
-        <item name="android:textSize">6pt</item>
+        <item name="android:textSize">8pt</item>
     </style>
     
     <style name="FloorButton">

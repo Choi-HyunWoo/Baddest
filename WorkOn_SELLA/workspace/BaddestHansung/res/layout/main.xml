@@ -34,7 +34,7 @@
             android:layout_marginRight="40dp"
             android:textColor="#FFFFFF"
             android:textSize="6pt"
-            android:text="캠퍼스맵" />
+            android:text="Cam.Map" />
 
         <Button
             android:id="@+id/bt_Timetable"
@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:textColor="#FFFFFF"
             android:textSize="6pt"
-            android:text="시간표" />
+            android:text="Timetable" />
         </LinearLayout>
         
         <TextView
