@@ -25,7 +25,7 @@ public class HansungMain extends Activity {
 		});
 		
 		//Timetable Button
-		Button bt_Timetable = (Button)findViewById(R.id.bt_Timetable);
+		//Button bt_Timetable = (Button)findViewById(R.id.bt_Timetable);
 		
     }
 }

@@ -1263,7 +1263,27 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
         public static final int action_settings=0x7f0a000f;
         public static final int app_name=0x7f0a000d;
+        public static final int building_name_changeui=0x7f0a0015;
+        public static final int building_name_gonghaka=0x7f0a0016;
+        public static final int building_name_gonghakb=0x7f0a0017;
+        public static final int building_name_hakgun=0x7f0a001f;
+        public static final int building_name_haksong=0x7f0a001d;
+        public static final int building_name_insung=0x7f0a0014;
+        public static final int building_name_jinli=0x7f0a001c;
+        public static final int building_name_jisun=0x7f0a0018;
+        public static final int building_name_mirae=0x7f0a001a;
+        /**  건물명 
+         */
+        public static final int building_name_naksan=0x7f0a0013;
+        public static final int building_name_tamgoo=0x7f0a001e;
+        public static final int building_name_uchon=0x7f0a001b;
+        public static final int building_name_yungoo=0x7f0a0019;
+        public static final int copyright=0x7f0a0012;
         public static final int hello_world=0x7f0a000e;
+        /**  메인화면에서 
+         */
+        public static final int menu_campusmap=0x7f0a0010;
+        public static final int menu_timetable=0x7f0a0011;
     }
     public static final class style {
         /** 
@@ -1292,7 +1312,9 @@ containing a value of this type.
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0b008c;
-        public static final int CampusBuildingButton=0x7f0b008d;
+        /**  only for GridLayout 
+         */
+        public static final int BuildingButton=0x7f0b008d;
         public static final int FloorButton=0x7f0b008f;
         public static final int RoomButton=0x7f0b008e;
         /**  Mimic text appearance in select_dialog_item.xml 

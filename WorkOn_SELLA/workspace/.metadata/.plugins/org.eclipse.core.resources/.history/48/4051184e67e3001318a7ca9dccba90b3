@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:columnCount="9"
+    android:rowCount="10"
+    android:useDefaultMargins="true"
+    android:alignmentMode="alignBounds" >
+    
+    <Button android:text="@string/building_name_naksan"
+        style="@style/BuildingButton"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_rowSpan="2"
+        android:layout_columnSpan="2" /> <!-- 낙산관 -->
+    
+    <Button android:text="@string/building_name_insung"
+        style="@style/BuildingButton"
+        android:layout_row="2"
+        android:layout_column="2"
+        android:layout_columnSpan="2" /> <!-- 인성관 -->
+    
+    <Button android:text="@string/building_name_changeui"
+        style="@style/BuildingButton"
+        android:layout_row="3"
+        android:layout_column="2"
+        android:layout_columnSpan="2" /> <!-- 창의관 -->
+    
+    <Button android:text="@string/building_name_gonghaka"
+        style="@style/BuildingButton"
+        android:layout_row="2"
+        android:layout_column="5"
+        android:layout_columnSpan="3" /> <!-- 공학관A -->
+    
+    <Button android:text="@string/building_name_gonghakb"
+        style="@style/BuildingButton"
+        android:layout_row="0"
+        android:layout_column="8"
+        android:layout_rowSpan="2" /> <!-- 공학관B -->
+    
+    <Button android:text="@string/building_name_jisun"
+        style="@style/BuildingButton"
+        android:layout_row="3"
+        android:layout_column="6"
+        android:layout_columnSpan="2" /> <!-- 지선관 -->
+    
+    <Button android:text="@string/building_name_yungoo"
+        style="@style/BuildingButton"
+        android:layout_row="4"
+        android:layout_column="5"
+        android:layout_columnSpan="3" /> <!-- 연구관 -->
+    
+    <Button android:text="@string/building_name_mirae"
+        style="@style/BuildingButton"
+        android:layout_row="5"
+        android:layout_column="2"
+        android:layout_columnSpan="2" /> <!-- 미래관 -->
+    
+    <Button android:text="@string/building_name_uchon"
+        style="@style/BuildingButton"
+        android:layout_row="7"
+        android:layout_column="2"
+        android:layout_columnSpan="3" /> <!-- 우촌관 -->
+    
+    <Button android:text="@string/building_name_jinli"
+        style="@style/BuildingButton"
+        android:layout_row="7"
+        android:layout_column="6"
+        android:layout_columnSpan="2" /> <!-- 진리관 -->
+    
+    <Button android:text="@string/building_name_haksong"
+        style="@style/BuildingButton"
+        android:layout_row="8"
+        android:layout_column="6"
+        android:layout_rowSpan="2" /> <!-- 학송관 -->
+    
+    <Button android:text="@string/building_name_tamgoo"
+        style="@style/BuildingButton"
+        android:layout_row="9"
+        android:layout_column="7"
+        android:layout_columnSpan="2" /> <!-- 탐구관 -->
+    
+    <Button android:text="@string/building_name_hakgun"
+        style="@style/BuildingButton"
+        android:layout_row="8"
+        android:layout_column="8" /> <!-- 학군단 -->
+    
+</GridLayout>
+
