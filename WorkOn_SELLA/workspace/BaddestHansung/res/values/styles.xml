@@ -25,15 +25,13 @@
         <item name="android:layout_gravity">fill</item>
         <item name="android:layout_margin">2dp</item>
     </style>
-    <style name="CSpace">
-        <item name="android:tag">columnspace</item>
+    <style name="MapOthers">
 		<item name="android:background">@color/White</item>
+        <item name="android:textColor">@color/LightGray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">5pt</item>
         <item name="android:layout_gravity">fill</item>
-    </style>
-    <style name="RSpace">
-        <item name="android:tag">rowspace</item>
-		<item name="android:background">@color/White</item>
-        <item name="android:layout_gravity">fill</item>
+        <item name="android:layout_margin">2dp</item>
     </style>
     
     <style name="RoomButton">
