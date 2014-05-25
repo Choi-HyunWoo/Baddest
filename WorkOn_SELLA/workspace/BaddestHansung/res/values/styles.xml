@@ -22,7 +22,18 @@
         <item name="android:textColor">@color/White</item>
         <item name="android:gravity">center</item>
         <item name="android:textSize">6pt</item>
-        <item name="android:layout_gravity">fill</item> <!-- only for GridLayout -->
+        <item name="android:layout_gravity">fill</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+    <style name="CSpace">
+        <item name="android:tag">columnspace</item>
+		<item name="android:background">@color/White</item>
+        <item name="android:layout_gravity">fill</item>
+    </style>
+    <style name="RSpace">
+        <item name="android:tag">rowspace</item>
+		<item name="android:background">@color/White</item>
+        <item name="android:layout_gravity">fill</item>
     </style>
     
     <style name="RoomButton">
