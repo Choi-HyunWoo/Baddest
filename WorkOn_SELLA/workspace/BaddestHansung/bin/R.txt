@@ -241,11 +241,13 @@ int drawable abc_textfield_searchview_holo_light 0x7f020054
 int drawable abc_textfield_searchview_right_holo_dark 0x7f020055
 int drawable abc_textfield_searchview_right_holo_light 0x7f020056
 int drawable bt_selector 0x7f020057
-int drawable ic_campusmap 0x7f020058
-int drawable ic_launcher 0x7f020059
-int drawable ic_timetable 0x7f02005a
-int drawable logo_hansung_0 0x7f02005b
-int drawable logo_hansung_1 0x7f02005c
+int drawable ic_action_call 0x7f020058
+int drawable ic_action_search 0x7f020059
+int drawable ic_campusmap 0x7f02005a
+int drawable ic_launcher 0x7f02005b
+int drawable ic_timetable 0x7f02005c
+int drawable logo_hansung_0 0x7f02005d
+int drawable logo_hansung_1 0x7f02005e
 int id action_bar 0x7f05001c
 int id action_bar_activity_content 0x7f050015
 int id action_bar_container 0x7f05001b
@@ -400,6 +402,8 @@ int style AppTheme 0x7f0b008c
 int style BuildingButton 0x7f0b008d
 int style FloorButton 0x7f0b0090
 int style MapOthers 0x7f0b008e
+int style MyActionBar 0x7f0b0092
+int style MyActionBarTheme 0x7f0b0091
 int style RoomButton 0x7f0b008f
 int style TextAppearance_AppCompat_Base_CompactMenu_Dialog 0x7f0b0063
 int style TextAppearance_AppCompat_Base_SearchResult 0x7f0b006d

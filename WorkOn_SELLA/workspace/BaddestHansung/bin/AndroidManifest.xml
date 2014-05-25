@@ -24,11 +24,13 @@
         
         <activity
             android:name="hansung.campusmap.main.CampusMain"
-            android:label="CampusMap" >
+            android:label="CampusMap"
+            android:theme="@style/MyActionBarTheme" >
         </activity>
         <activity
             android:name="hansung.campusmap.gonghaka.GonghakA_1"
-            android:label="Campus Gonghak A" >
+            android:theme="@style/MyActionBarTheme"
+            android:label="Gonghak A" >
         </activity>
     </application>
 

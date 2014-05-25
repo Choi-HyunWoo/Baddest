@@ -1084,11 +1084,13 @@ containing a value of this type.
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
         public static final int bt_selector=0x7f020057;
-        public static final int ic_campusmap=0x7f020058;
-        public static final int ic_launcher=0x7f020059;
-        public static final int ic_timetable=0x7f02005a;
-        public static final int logo_hansung_0=0x7f02005b;
-        public static final int logo_hansung_1=0x7f02005c;
+        public static final int ic_action_call=0x7f020058;
+        public static final int ic_action_search=0x7f020059;
+        public static final int ic_campusmap=0x7f02005a;
+        public static final int ic_launcher=0x7f02005b;
+        public static final int ic_timetable=0x7f02005c;
+        public static final int logo_hansung_0=0x7f02005d;
+        public static final int logo_hansung_1=0x7f02005e;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1332,6 +1334,12 @@ containing a value of this type.
         public static final int BuildingButton=0x7f0b008d;
         public static final int FloorButton=0x7f0b0090;
         public static final int MapOthers=0x7f0b008e;
+        /**  ActionBar styles 
+         */
+        public static final int MyActionBar=0x7f0b0092;
+        /**  the theme applied to the application or activity 
+         */
+        public static final int MyActionBarTheme=0x7f0b0091;
         public static final int RoomButton=0x7f0b008f;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
