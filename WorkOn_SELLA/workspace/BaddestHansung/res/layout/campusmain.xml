@@ -40,12 +40,10 @@
 	    android:text="Campus Map..."/>
     
     <Button
-        android:id="@+id/bt_GonghakA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Gonghak A" />
     <Button
-        android:id="@+id/bt_GonghakB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Gonghak B" />

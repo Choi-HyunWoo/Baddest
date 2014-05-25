@@ -13,7 +13,7 @@
     <!-- 건물명 -->
     <string name="building_name_naksan">NS</string>
     <string name="building_name_insung">IS</string>
-    <string name="building_name_changeui">CU</string>
+    <string name="building_name_changeui">CE</string>
     <string name="building_name_gonghaka">GHa</string>
     <string name="building_name_gonghakb">GHb</string>
     <string name="building_name_jisun">JS</string>
