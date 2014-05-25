@@ -12,77 +12,82 @@ import android.view.View;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.widget.Button;
 import android.widget.GridLayout;
+import android.widget.RelativeLayout;
 
 public class CampusMain extends Activity {
-	GridLayout gl = null;	//CampusMap's GridLayout
 	
-	public void fillview(GridLayout gl) {
-	    
-	    Button temp;
-
-	    int columns = gl.getColumnCount()-1;	//except column space
-	    int rows = gl.getRowCount()-1;			//except row space
-	    Log.i("debuging","CellCount: column "+columns+", row "+rows);
-	    
-	    int idealCellWidth = (int) (gl.getWidth()/columns);
-	    int idealCellHeight = (int) (gl.getHeight()/rows);
-	    Log.i("debuging","idealCell: width "+idealCellWidth+", height "+idealCellHeight);				
+	RelativeLayout layout = null; //CampusMap's Layout
+	int layoutMargin = 50;	//to adapt to changing GridLayout's size
 	
-	    int roadwidth = 30;
-	    
-    	//Stretch buttons
-	    for(int i=0; i<gl.getChildCount(); i++){
-	    	if(gl.getChildAt(i).getTag()!=null){
-	    		temp = (Button)gl.getChildAt(i);
-		    	if(gl.getChildAt(i).getTag().equals("columnspace")){
-		    		if(i==3)  temp.setWidth(roadwidth);
-		    		else	  temp.setWidth(idealCellWidth);
-			        temp.setHeight(1);
-		    		Log.i("debuging","ChildAt("+i+") ColumnSpace");
-		    	}if(gl.getChildAt(i).getTag().equals("rowspace")){
-		    		if((i==11)||(i==13))  temp.setHeight(roadwidth);
-		    		else	  temp.setHeight(idealCellHeight);
-			        temp.setWidth(1);
-		    		Log.i("debuging","ChildAt("+i+") RowSpace");
-		    	}
-	    	}
-	    }
+	GridLayout gl = null;	//GridLayout
+	int idealCellWidth;
+	int idealCellHeight;
+	
+	public void scaleButtonsInMap(){
+		int roadwidth = 30;
+		
+		idealCellWidth = (int)((layout.getWidth()-layoutMargin-roadwidth)/(gl.getColumnCount()-1));
+		idealCellHeight = (int)((layout.getHeight()-layoutMargin-roadwidth)/(gl.getRowCount()-1));
+		Log.i("debuging","idealCell: width "+idealCellWidth+", height "+idealCellHeight);
+		
+		//scale buildings individually
+		scaleButton((Button)findViewById(R.id.bt_NakSan), 1,2);
+		scaleButton((Button)findViewById(R.id.bt_InSung), 2,1);
+		scaleButton((Button)findViewById(R.id.bt_ChangEui), 2,1);
+		scaleButton((Button)findViewById(R.id.bt_GongHakA), 2,1);
+		//scaleButton((Button)findViewById(R.id.bt_GongHakB), 1, (float)1.7);
+		scaleButton((Button)findViewById(R.id.bt_JiSun), 2,1);
+		scaleButton((Button)findViewById(R.id.bt_YunGoo), 2,1);
+		scaleButton((Button)findViewById(R.id.bt_MiRae), 2,1);
+		scaleButton((Button)findViewById(R.id.bt_UChon), 2,1);
+		scaleButton((Button)findViewById(R.id.bt_JinLi), 2,1);
+		scaleButton((Button)findViewById(R.id.bt_HakSong), 1,2);
+		scaleButton((Button)findViewById(R.id.bt_TamGoo), 2,1);
+		scaleButton((Button)findViewById(R.id.bt_HakGun), 1,1);
+		Log.i("debuging","Scaling Buildings OK");
+		
+		scaleButton((Button)findViewById(R.id.other_tennis), 2, (float)0.7);
+		scaleButton((Button)findViewById(R.id.other_grass), 2, (float)0.7);
+		//scaleButton((Button)findViewById(R.id.other_playfield), 3,2);
+		Button road = (Button)findViewById(R.id.other_road);
+		road.setWidth(roadwidth); road.setHeight(roadwidth);
+		Log.i("debuging","Scaling Others OK");
+	}
+	public void scaleButton(Button bt, float timesWidth, float timesHeight){
+		bt.setWidth( (int)(idealCellWidth * timesWidth) );
+		bt.setHeight( (int)(idealCellHeight * timesHeight) );
 	}
 	
-	public void scaleBuildings(GridLayout gl){
-
-		int idealUnitWidth = (int) (gl.getWidth()/gl.getColumnCount());
-		int idealUnitHeight = (int) (gl.getHeight()/gl.getRowCount());
-		Log.i("debuging","idealUnit: width "+idealUnitWidth+", height "+idealUnitHeight);
-		
-		Button bt_naksan = (Button)findViewById(R.id.bt_NakSan);
-		bt_naksan.setWidth(idealUnitWidth*2);
-		bt_naksan.setHeight(idealUnitHeight*2);
-		
-	}
 	
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.campusmap);
         
-        //GridLayout안의 버튼 꽉차게 늘리기
-        gl = (GridLayout)findViewById(R.id.campusmap_gridlayout);
-	    gl.getViewTreeObserver().addOnGlobalLayoutListener(new OnGlobalLayoutListener() {	
+        //1.to stretch building buttons in Layout
+        layout = (RelativeLayout)findViewById(R.id.campusmap_layout);	//RelativeLayout
+        gl = (GridLayout)findViewById(R.id.campusmap_gridlayout);		//GridLayout
+        
+        //Layout이 다 그려진 것인지 검사한 뒤 scaleMapButtons()실행
+        gl.getViewTreeObserver().addOnGlobalLayoutListener(new OnGlobalLayoutListener() {	
 			@SuppressLint("NewApi")
 			@Override
 			public void onGlobalLayout() {
+				//remove method name changed after API 16.
 				if(Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN){
 					gl.getViewTreeObserver().removeGlobalOnLayoutListener(this); //deprecated method
 				}else{
 		            gl.getViewTreeObserver().removeOnGlobalLayoutListener(this); //method for after API16
 				}
-				Log.i("debuging","GridLayout: width "+gl.getWidth()+", height "+gl.getHeight());				
-				fillview(gl); //stretch buttons
+				
+				Log.i("debuging","Layout: width "+layout.getWidth()+", height "+layout.getHeight());
+				scaleButtonsInMap(); //stretch building buttons
+				
+				Log.i("debuging","GridLayout: width "+gl.getWidth()+", height "+gl.getHeight());
 			}
 		});
         
-        
+        //2.to handle button events
         Button bt_GonghakA = (Button)findViewById(R.id.bt_GongHakA);
 		bt_GonghakA.setOnClickListener(new View.OnClickListener() {
 			@Override
