@@ -1,0 +1,112 @@
+package hansung.campusmap.main;
+
+import hansung.campusmap.gonghaka.GonghakA_1;
+import hansung.main.main.R;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Build;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Display;
+import android.view.View;
+import android.view.ViewTreeObserver;
+import android.view.ViewTreeObserver.OnGlobalLayoutListener;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.GridLayout;
+
+public class CampusMain extends Activity {
+	GridLayout gl = null;	//CampusMap's GridLayout
+	
+	public void fillview(GridLayout gl) {
+	    
+	    Button temp;
+
+	    //Stretch buttons
+	    int idealChildWidth = (int) (gl.getWidth()/gl.getColumnCount());
+	    int idealChildHeight = (int) (gl.getHeight()/gl.getRowCount());
+
+	    for(int i=0; i<gl.getChildCount(); i++){
+	    	if(gl.getChildAt(i).getTag()!=null){
+		    	if(gl.getChildAt(i).getTag().equals("columnspace")){
+		    		Log.i("debuging", "String equals 'columnspace' OK");
+		    		temp = (Button)gl.getChildAt(i);
+		    		Log.i("debuging", "gl.getChildAt("+i+") OK");
+			        temp.setWidth(idealChildWidth);
+		    		Log.i("debuging", "temp.setWidth OK");
+		    	}if(gl.getChildAt(i).getTag().equals("rowspace")){
+		    		Log.i("debuging", "String equals 'rowspace' OK");
+		    		temp = (Button)gl.getChildAt(i);
+			        temp.setHeight(idealChildHeight);
+		    	}
+	    	}
+		    Log.i("debuging", i+" DONE");
+	    }
+	    Log.i("debuging", "for() OK");
+	}
+	
+	public void scaleBuildings(GridLayout gl){
+
+		Display display = ((WindowManager)this.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
+
+		int idealUnitWidth = (int) (display.getWidth()/gl.getColumnCount());
+		int idealUnitHeight = (int) (display.getHeight()/gl.getRowCount());
+//		int idealUnitWidth = (int) (gl.getWidth()/gl.getColumnCount());
+//		int idealUnitHeight = (int) (gl.getHeight()/gl.getRowCount());
+		Log.i("debuging","idealUnit: width "+idealUnitWidth+", height "+idealUnitHeight);
+		
+		Button bt_naksan = (Button)findViewById(R.id.bt_NakSan);
+		bt_naksan.setWidth(idealUnitWidth*2);
+		bt_naksan.setHeight(idealUnitHeight*2);
+		
+	}
+	
+	@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.campusmap);
+        
+        //GridLayout안의 버튼 꽉차게 늘리기
+        gl = (GridLayout)findViewById(R.id.campusmap_gridlayout);
+		Log.i("debuging","GridLayout: width "+gl.getWidth()+", height "+gl.getHeight());
+		
+		/*
+		ViewTreeObserver vto = gl.getViewTreeObserver(); //ViewTreeObserver: 뷰와 관련된 상태를 전달받을 수 있음
+	    vto.addOnGlobalLayoutListener(new OnGlobalLayoutListener() {
+	    	@Override public void onGlobalLayout() {
+	            GridLayout gl = (GridLayout)findViewById(R.id.campusmap_gridlayout);
+	            //fillview(gl);
+
+	            ViewTreeObserver obs = gl.getViewTreeObserver();
+	            obs.removeGlobalOnLayoutListener(this);
+	    }});
+	    */
+	    gl.getViewTreeObserver().addOnGlobalLayoutListener(new OnGlobalLayoutListener() {
+			@Override
+			public void onGlobalLayout() {
+				if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN){
+		            gl.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+				}else{
+					gl.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+				}
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		
+	    
+        //scaleBuildings(gl);
+        
+        
+        Button bt_GonghakA = (Button)findViewById(R.id.bt_GongHakA);
+		bt_GonghakA.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(getApplicationContext(), GonghakA_1.class);
+				startActivity(intent);
+			}
+		});
+		
+	}
+}

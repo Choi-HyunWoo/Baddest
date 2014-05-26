@@ -17,21 +17,32 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
     
-    <style name="CampusBuildingButton">
-        <item name="android:background">@color/MainColor</item>
+    <style name="BuildingButton">
+        <item name="android:background">@drawable/bt_selector</item>
         <item name="android:textColor">@color/White</item>
-        <item name="android:textSize">7pt</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">6pt</item>
+        <item name="android:layout_gravity">fill</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+    <style name="MapOthers">
+		<item name="android:background">@color/White</item>
+        <item name="android:textColor">@color/LightGray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">5pt</item>
+        <item name="android:layout_gravity">fill</item>
+        <item name="android:layout_margin">2dp</item>
     </style>
     
     <style name="RoomButton">
-        <item name="android:background">@color/LightGray</item>
+        <item name="android:background">@drawable/bt_selector</item>
 		<item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">1dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/White</item>
-        <item name="android:textSize">6pt</item>
+        <item name="android:textSize">8pt</item>
     </style>
     
     <style name="FloorButton">

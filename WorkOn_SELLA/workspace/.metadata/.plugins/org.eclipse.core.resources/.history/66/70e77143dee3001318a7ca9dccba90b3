@@ -1,0 +1,97 @@
+package hansung.campusmap.main;
+
+import hansung.campusmap.gonghaka.GonghakA_1;
+import hansung.main.main.R;
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Build;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Display;
+import android.view.View;
+import android.view.ViewTreeObserver;
+import android.view.ViewTreeObserver.OnGlobalLayoutListener;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.GridLayout;
+
+public class CampusMain extends Activity {
+	GridLayout gl = null;	//CampusMap's GridLayout
+	
+	public void fillview(GridLayout gl) {
+	    
+	    Button temp;
+
+	    //Stretch buttons
+	    int idealChildWidth = (int) (gl.getWidth()/gl.getColumnCount());
+	    int idealChildHeight = (int) (gl.getHeight()/gl.getRowCount());
+
+	    for(int i=0; i<gl.getChildCount(); i++){
+	    	if(gl.getChildAt(i).getTag()!=null){
+		    	if(gl.getChildAt(i).getTag().equals("columnspace")){
+		    		Log.i("debuging", "String equals 'columnspace' OK");
+		    		temp = (Button)gl.getChildAt(i);
+		    		Log.i("debuging", "gl.getChildAt("+i+") OK");
+			        temp.setWidth(idealChildWidth);
+			        temp.setHeight(1);
+		    		Log.i("debuging", "temp.setWidth OK");
+		    	}if(gl.getChildAt(i).getTag().equals("rowspace")){
+		    		Log.i("debuging", "String equals 'rowspace' OK");
+		    		temp = (Button)gl.getChildAt(i);
+			        temp.setHeight(idealChildHeight);
+			        temp.setWidth(1);
+		    	}
+	    	}
+		    Log.i("debuging", i+" DONE");
+	    }
+	    Log.i("debuging", "for() OK");
+	}
+	
+	public void scaleBuildings(GridLayout gl){
+
+		int idealUnitWidth = (int) (gl.getWidth()/gl.getColumnCount());
+		int idealUnitHeight = (int) (gl.getHeight()/gl.getRowCount());
+		Log.i("debuging","idealUnit: width "+idealUnitWidth+", height "+idealUnitHeight);
+		
+		Button bt_naksan = (Button)findViewById(R.id.bt_NakSan);
+		bt_naksan.setWidth(idealUnitWidth*2);
+		bt_naksan.setHeight(idealUnitHeight*2);
+		
+	}
+	
+	@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.campusmap);
+        
+        //GridLayout¾ÈÀÇ ¹öÆ° ²ËÂ÷°Ô ´Ã¸®±â
+        gl = (GridLayout)findViewById(R.id.campusmap_gridlayout);
+	    gl.getViewTreeObserver().addOnGlobalLayoutListener(new OnGlobalLayoutListener() {	
+			@SuppressLint("NewApi")
+			@Override
+			public void onGlobalLayout() {
+				if(Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN){
+					gl.getViewTreeObserver().removeGlobalOnLayoutListener(this); //deprecated method
+				}else{
+		            gl.getViewTreeObserver().removeOnGlobalLayoutListener(this); //method for after API16
+				}
+				Log.i("debuging","GridLayout: width "+gl.getWidth()+", height "+gl.getHeight());				
+				fillview(gl); //stretch buttons
+			}
+		});
+        
+        
+        Button bt_GonghakA = (Button)findViewById(R.id.bt_GongHakA);
+		bt_GonghakA.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(getApplicationContext(), GonghakA_1.class);
+				startActivity(intent);
+			}
+		});
+		
+	}
+}
