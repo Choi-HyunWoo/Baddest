@@ -11,13 +11,13 @@
 	    android:background="@color/MainColor"
 	    android:paddingLeft="10dp" 
 	    android:paddingRight="3dp" >
-	    <TextView 
+	    <TextView
 	        android:id="@+id/tv_MapTitle"
 	        android:layout_width="wrap_content"
 	        android:layout_height="34dp"
 	        android:textColor="#FFFFFF"
 	        android:textSize="8pt"
-	        android:text="한성대학교 캠퍼스"
+	        android:text="Hansung Univ. Campus"
 	        android:layout_alignParentLeft="true"
 	        android:layout_centerVertical="true"
 	        android:gravity="center_vertical" />
@@ -33,20 +33,18 @@
 
     <TextView 
         android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
+	    android:layout_height="fill_parent"
 	    android:layout_weight="1"
 	    android:gravity="center"
 	    android:textSize="10pt"
 	    android:text="Campus Map..."/>
     
     <Button
-        android:id="@+id/bt_GonghakA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="공학관A" />
+        android:text="Gonghak A" />
     <Button
-        android:id="@+id/bt_GonghakA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="공학관B" />
+        android:text="Gonghak B" />
 </LinearLayout>
