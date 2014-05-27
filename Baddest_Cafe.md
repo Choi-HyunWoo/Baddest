@@ -5,6 +5,8 @@ Baddest 카페
 <a href ="cafe.naver.com/baddest"cafe.naver.com/baddest > </a>
 </body>
 </html>
+[http://cafe.naver.com/baddest]
+
 
 전체공개 입니다.
 
