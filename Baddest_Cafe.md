@@ -1,8 +1,10 @@
 Baddest 카페
 
-
+<html>
+<body>
 <a href ="cafe.naver.com/baddest"cafe.naver.com/baddest > </a>
-
+</body>
+</html>
 
 전체공개 입니다.
 
