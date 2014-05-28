@@ -25,6 +25,8 @@
         
         <activity
             android:name="org.androidtown.helloworld.NewActivity" ></activity>
+        <!-- 액티비티가 추가될 때마다 매니패스트에서 액티비티를 등록해주어야함!  -->
+        <!-- .xml 파일의 파일명은 반드시 소문자로만 작성할 것! -->
         
     </application>
 
