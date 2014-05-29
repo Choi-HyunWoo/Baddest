@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:text="108"
+            android:layout_weight="1"
+            style="@style/RoomButton" />
+        <Button
+            android:text="102"
+            android:layout_weight="2"
+            style="@style/RoomButton" />
+        <Button
+            android:text="101"
+            android:layout_weight="2"
+            style="@style/RoomButton" />
+        <Button
+            android:text="Bathroom"
+            android:layout_weight="1"
+            style="@style/RoomButton" />
+        <Button
+            android:text="100\nRestroom"
+            android:layout_weight="1"
+            style="@style/RoomButton" />
+        <Button
+            android:text="Elevator"
+            android:layout_weight="0"
+            style="@style/WhitePlace" />
+        
+    </LinearLayout>
+
+    <RelativeLayout 
+    	android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+	    <TextView
+	        android:text="stairs"
+	        style="@style/WhitePlace"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true" />
+	    <TextView
+	        android:text="stairs"
+	        style="@style/WhitePlace"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true" />
+	</RelativeLayout>
+	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+	    
+        <Button
+            android:text="Grazie"
+            android:layout_weight="2"
+            style="@style/RoomButton" />
+        <Button
+            android:text="109\nRestroom"
+            android:layout_weight="2"
+            style="@style/RoomButton" />
+        <Button
+            android:text="103"
+            android:layout_weight="3"
+            style="@style/RoomButton" />
+        <Button
+            android:text="104"
+            android:layout_weight="2"
+            style="@style/RoomButton" />
+        <Button
+            android:text="105"
+            android:layout_weight="1"
+            style="@style/RoomButton" />
+        <Button
+            android:text="107"
+            android:layout_weight="1"
+            style="@style/RoomButton" />
+        <Button
+            android:text="Guardroom"
+            android:layout_weight="1"
+            style="@style/RoomButton" />
+        <Button
+            android:text="Exit"
+            android:layout_weight="2"
+            style="@style/WhitePlace" />
+        
+    </LinearLayout>
+</LinearLayout>

@@ -1230,11 +1230,12 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
-        public static final int campus_gonghaka=0x7f030018;
-        public static final int campusmain=0x7f030019;
-        public static final int campusmap=0x7f03001a;
-        public static final int main=0x7f03001b;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
+        public static final int campus_floors_ex=0x7f030018;
+        public static final int campus_gonghaka1=0x7f030019;
+        public static final int campusmain=0x7f03001a;
+        public static final int campusmap=0x7f03001b;
+        public static final int main=0x7f03001c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -1332,14 +1333,14 @@ containing a value of this type.
          */
         public static final int AppTheme=0x7f0b008c;
         public static final int BuildingButton=0x7f0b008d;
-        public static final int FloorButton=0x7f0b0090;
+        public static final int FloorButton=0x7f0b0091;
         public static final int MapOthers=0x7f0b008e;
         /**  ActionBar styles 
          */
-        public static final int MyActionBar=0x7f0b0092;
+        public static final int MyActionBar=0x7f0b0093;
         /**  the theme applied to the application or activity 
          */
-        public static final int MyActionBarTheme=0x7f0b0091;
+        public static final int MyActionBarTheme=0x7f0b0092;
         public static final int RoomButton=0x7f0b008f;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
@@ -1449,6 +1450,7 @@ containing a value of this type.
         /**  Base platform-dependent theme providing a light-themed activity. 
          */
         public static final int Theme_Base_Light=0x7f0b007f;
+        public static final int WhitePlace=0x7f0b0090;
         /**  Styles in here can be extended for customisation in your application. Each utilises
          one of the Base styles. If Holo themes are available on the current platform version
          they will be used instead of the compat styles. 
