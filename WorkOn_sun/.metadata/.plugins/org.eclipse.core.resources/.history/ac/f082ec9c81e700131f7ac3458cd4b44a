@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:text="401\n부동산경영 학생회실"
+            android:layout_weight="1"
+            style="@style/RoomButton" />
+        <Button
+            android:text="402\n일반강의실"
+            android:layout_weight="3"
+            style="@style/RoomButton" />
+        <Button
+            android:text="403\n일반강의실"
+            android:layout_weight="1"
+            style="@style/RoomButton" />
+        <Button
+            android:text="화장실,남자샤워실"
+            android:layout_weight="2"
+            style="@style/RoomButton" />
+        <Button
+            android:text="Elevator"
+            android:layout_weight="0"
+            style="@style/WhitePlace" />
+        
+    </LinearLayout>
+
+    <RelativeLayout 
+    	android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+	    <TextView
+	        android:text="stairs"
+	        style="@style/WhitePlace"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true" />
+	    <TextView
+	        android:text="stairs"
+	        style="@style/WhitePlace"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true" />
+	</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:text="404\n일반강의실"
+            android:layout_weight="2"
+            style="@style/RoomButton" />
+        <Button
+            android:text="405\n일반강의실"
+            android:layout_weight="2"
+            style="@style/RoomButton" />
+        <Button
+            android:text="406\n환경/열유체 실험실(기계)"
+            android:layout_weight="2"
+            style="@style/RoomButton" />
+        <Button
+            android:text="산업안전대학원사무실\n(기계-박두용교수)"
+            android:layout_weight="0.5"
+            style="@style/RoomButton" />
+        <Button
+            android:text="조세홍교수 랩실"
+            android:layout_weight="0.5"
+            style="@style/RoomButton" />
+        <Button
+            android:text="B동 연결"
+            android:layout_weight="1"
+            style="@style/WhitePlace" />
+        
+    </LinearLayout>
+</LinearLayout>

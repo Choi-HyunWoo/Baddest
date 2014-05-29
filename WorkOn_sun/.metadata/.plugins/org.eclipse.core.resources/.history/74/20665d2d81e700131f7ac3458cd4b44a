@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:text="300\n실습준비실(정통)"
+            android:layout_weight="1"
+            style="@style/RoomButton" />
+        <Button
+            android:text="301\n실습실(멀티)"
+            android:layout_weight="3"
+            style="@style/RoomButton" />
+        <Button
+            android:text="302\n정통 과사무실"
+            android:layout_weight="1"
+            style="@style/RoomButton" />
+        <Button
+            android:text="303\n프로젝트실(정통)"
+            android:layout_weight="1"
+            style="@style/RoomButton" />
+        <Button
+            android:text="화장실,남자샤워실"
+            android:layout_weight="2"
+            style="@style/RoomButton" />
+        <Button
+            android:text="Elevator"
+            android:layout_weight="0"
+            style="@style/WhitePlace" />
+        
+    </LinearLayout>
+
+    <RelativeLayout 
+    	android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+	    <TextView
+	        android:text="stairs"
+	        style="@style/WhitePlace"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true" />
+	    <TextView
+	        android:text="stairs"
+	        style="@style/WhitePlace"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true" />
+	</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:text="304\n통신시스템실험실 (정통)"
+            android:layout_weight="2"
+            style="@style/RoomButton" />
+        <Button
+            android:text="305\n제4실습실(컴공)"
+            android:layout_weight="2"
+            style="@style/RoomButton" />
+        <Button
+            android:text="309\n강의실(멀티)"
+            android:layout_weight="2"
+            style="@style/RoomButton" />
+        <Button
+            android:text="313\n서버실(멀티)"
+            android:layout_weight="0.5"
+            style="@style/RoomButton" />
+        <Button
+            adnroid:text="조세홍교수 랩실"
+            android:layout_weight="0.5"
+            style="@style/RoomButton" />
+        <Button
+            android:text="B동 연결"
+            android:layout_weight="1"
+            style="@style/WhitePlace" />
+        
+    </LinearLayout>
+</LinearLayout>
