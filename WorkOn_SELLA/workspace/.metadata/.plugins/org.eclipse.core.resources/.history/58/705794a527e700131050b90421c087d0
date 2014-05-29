@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            style="@style/RoomButton"
+            android:text="108\n매점" />
+        <Button
+            style="@style/RoomButton"
+            android:text="102" />
+        <Button
+            style="@style/RoomButton"
+            android:text="103" />
+        <Button
+            style="@style/RoomButton"
+            android:text="103" />
+        <Button
+            style="@style/RoomButton"
+            android:text="103" />
+        <Button
+            style="@style/RoomButton"
+            android:text="103" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="(hall)"
+        android:textColor="#AAAAAA" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            style="@style/RoomButton"
+            android:text="104" />
+
+        <Button
+            style="@style/RoomButton"
+            android:text="Multimedia" />
+
+        <Button
+            style="@style/RoomButton"
+            android:text="106" />
+
+        <Button
+            style="@style/RoomButton"
+            android:text="107" />
+    </LinearLayout>
+</LinearLayout>
