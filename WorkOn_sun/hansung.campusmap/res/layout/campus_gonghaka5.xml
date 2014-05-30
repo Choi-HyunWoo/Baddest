@@ -13,24 +13,34 @@
 
         <Button
             style="@style/RoomButton"
-            android:layout_weight="0.8"
-            android:text="401\n부동산경영 학생회실" />
+            android:layout_weight="1"
+            android:textSize="20px"
+            android:text="510\n공학인증센터 문서고" />
 
         <Button
-            android:text="402\n일반강의실"
-            android:layout_weight="3"
+            android:text="500\n시뮬레이션연구실\n(산경)"
+            android:layout_weight="1"
+            android:textSize="20px"
             style="@style/RoomButton" />
         <Button
-            android:text="403\n일반강의실"
-            android:layout_weight="2"
+            android:text="501\n인간공학연구실\n(산경)"
+            android:layout_weight="1"
+            android:textSize="20px"
             style="@style/RoomButton" />
         <Button
-            android:text="화장실,남자샤워실"
-            android:layout_weight="3"
+            android:text="502\n품질관리실험실\n(산경)"
+            android:layout_weight="2.5"
+            android:textSize="20px"
+            style="@style/RoomButton" />
+        <Button
+            android:text="503\n디지털신호처리실습실\n(기계)"
+            android:textSize="20px"
+            android:layout_weight="3.5"
             style="@style/RoomButton" />
         <Button
             android:text="Elevator"
             android:layout_weight="0"
+            android:textSize="20px"
             style="@style/WhitePlace" />
         
     </LinearLayout>
@@ -60,29 +70,44 @@
         android:orientation="vertical" >
 
         <Button
-            android:text="404\n일반강의실"
-            android:layout_weight="5"
+            android:text="504\n공학교육개발센터"
+            android:textSize="13dp"
+            android:layout_weight="1"
             style="@style/RoomButton" />
 
         <Button
             style="@style/RoomButton"
-            android:layout_weight="5"
-            android:text="405\n일반강의실" />
+            android:layout_weight="3"
+            android:textSize="13dp"
+            android:text="505\n전산설계실\n(기계)" />
 
         <Button
-            android:text="406\n환경/열유체 실험실(기계)"
-            android:layout_weight="5"
+            android:text="506\n제조공학실험실\n(산경)"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            style="@style/RoomButton" />
+        <Button
+            android:text="507\n통계분석실험실\n(산경)"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            style="@style/RoomButton" />
+        <Button
+            android:text="508\n산업정보학연구실\n(산경)"
+            android:layout_weight="1"
+            android:textSize="13dp"
             style="@style/RoomButton" />
 
         <Button
             style="@style/RoomButton"
-            android:layout_height="wrap_content"
-            android:text="산업안전\n대학원사무실" />
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="509\n고객전략연구실\n(산경)" />
 
         <Button
             style="@style/RoomButton"
-            android:layout_height="wrap_content"
-            android:text="디지털컨텐츠제작\n조세홍교수 랩실" />
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="517\n경영과학연구실" />
 
         <Button
             android:text="B동 연결"

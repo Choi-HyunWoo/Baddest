@@ -12,11 +12,11 @@
         android:orientation="vertical" >
 
         <Button
-            android:text="300\n실습준비실(정통)"
+            android:text="300\n실습준비실\n(정통)"
             android:layout_weight="1"
             style="@style/RoomButton" />
         <Button
-            android:text="301\n실습실(멀티)"
+            android:text="301\n실습실\n(멀티)"
             android:layout_weight="3"
             style="@style/RoomButton" />
         <Button
@@ -24,7 +24,7 @@
             android:layout_weight="1"
             style="@style/RoomButton" />
         <Button
-            android:text="303\n프로젝트실(정통)"
+            android:text="303\n프로젝트실\n(정통)"
             android:layout_weight="1"
             style="@style/RoomButton" />
         <Button
@@ -63,24 +63,24 @@
         android:orientation="vertical" >
 
         <Button
-            android:text="304\n통신시스템실험실 (정통)"
+            android:text="304\n통신시스템실험실\n(정통)"
             android:layout_weight="2"
             style="@style/RoomButton" />
         <Button
-            android:text="305\n제4실습실(컴공)"
+            android:text="305\n제4실습실\n(컴공)"
             android:layout_weight="2"
             style="@style/RoomButton" />
         <Button
-            android:text="309\n강의실(멀티)"
+            android:text="309\n강의실\n(멀티)"
             android:layout_weight="2"
             style="@style/RoomButton" />
         <Button
-            android:text="313\n서버실(멀티)"
+            android:text="313\n서버실\n(멀티)"
             android:layout_weight="0.5"
             style="@style/RoomButton" />
         <Button
             android:text="B동 연결"
-            android:layout_weight="1"
+            android:layout_weight="0"
             style="@style/WhitePlace" />
         
     </LinearLayout>
