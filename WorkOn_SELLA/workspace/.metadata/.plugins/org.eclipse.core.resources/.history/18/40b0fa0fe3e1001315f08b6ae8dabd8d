@@ -1,7 +1,0 @@
-package hansung.campusmap.gonghakb;
-
-import Activity;
-
-public class GonghakB_1 extends Activity {
-
-}
