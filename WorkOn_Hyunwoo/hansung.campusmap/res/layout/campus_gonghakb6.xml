@@ -5,46 +5,40 @@
     android:layout_height="match_parent"
     android:orientation="horizontal" >
 
-    <LinearLayout
+   <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical" >
-
         <Button
-            style="@style/RoomButton"
-            android:layout_weight="0.8"
-            android:text="401\n부동산경영 학생회실" />
-
-        <Button
-            android:text="402\n일반강의실"
+            android:text="613\n강의실\n(기계)"
             android:layout_weight="3"
             style="@style/RoomButton" />
         <Button
-            android:text="403\n일반강의실"
-            android:layout_weight="2"
+            android:text="612-2\n기계시스템공학\n스터디실"
+            android:layout_weight="1"
             style="@style/RoomButton" />
         <Button
-            android:text="화장실,남자샤워실"
+            android:text="612\n메카트로닉스 실험실\n(기계)"
             android:layout_weight="3"
             style="@style/RoomButton" />
         <Button
-            android:text="Elevator"
-            android:layout_weight="0"
-            style="@style/WhitePlace" />
-        
+            android:text="611\n재료실험실\n(기계)"
+            android:layout_weight="1"
+            style="@style/RoomButton" />
     </LinearLayout>
 
-    <RelativeLayout 
+    
+   	<RelativeLayout 
     	android:layout_width="40dp"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
-        <Button
-            android:text="618\n실습기자재실\n(기계)"
-            android:layout_weight="0"
-        	android:layout_width="fill_parent"
-        	android:layout_height="100dp"
-            style="@style/RoomButton"
+        android:orientation="vertical"  >
+	    <Button
+	        android:text="618\n실습\n기자재실"
+	        android:textSize="25px"
+	        style="@style/RoomButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
 	        android:layout_alignParentTop="true" />
 	</RelativeLayout>
 
@@ -55,32 +49,22 @@
         android:orientation="vertical" >
 
         <Button
-            android:text="404\n일반강의실"
-            android:layout_weight="5"
+            android:text="X"
+            android:layout_weight="4"
             style="@style/RoomButton" />
 
         <Button
-            style="@style/RoomButton"
-            android:layout_weight="5"
-            android:text="405\n일반강의실" />
-
-        <Button
-            android:text="406\n환경/열유체 실험실(기계)"
-            android:layout_weight="5"
+            android:text="614\n기계제작실습실\n(기계)"
+            android:layout_weight="2"
             style="@style/RoomButton" />
 
         <Button
-            style="@style/RoomButton"
-            android:layout_height="wrap_content"
-            android:text="산업안전\n대학원사무실" />
+            android:text="화장실"
+            android:layout_weight="3"
+            style="@style/RoomButton" />
 
         <Button
-            style="@style/RoomButton"
-            android:layout_height="wrap_content"
-            android:text="디지털컨텐츠제작\n조세홍교수 랩실" />
-
-        <Button
-            android:text="B동 연결"
+            android:text="Stairs"
             android:layout_weight="1"
             style="@style/WhitePlace" />
         

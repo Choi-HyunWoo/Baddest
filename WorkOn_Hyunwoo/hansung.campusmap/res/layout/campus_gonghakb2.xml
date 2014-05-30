@@ -13,7 +13,7 @@
 
         <Button
             android:text="216\n프로그래밍 실습실 (정통)"
-            android:layout_weight="2"
+            android:layout_weight="4"
             style="@style/RoomButton" />
         <Button
             android:text="214\n통신 실습실 (정통)"
@@ -21,11 +21,11 @@
             style="@style/RoomButton" />
         <Button
             android:text="211\n디지털시스템\n실험실 (정통)"
-            android:layout_weight="1"
+            android:layout_weight="2"
             style="@style/RoomButton" />
         <Button
             android:text="220\n세미나실\n(정통)"
-            android:layout_weight="1"
+            android:layout_weight="2"
             style="@style/RoomButton" />
         
     </LinearLayout>
@@ -43,19 +43,20 @@
         android:orientation="vertical" >
 
         <Button
-            android:text="X"
-            android:layout_weight="3"
-            style="@style/RoomButton" />
-        <Button
-            android:text="219\n소모임실 (정통)"
+            style="@style/RoomButton"
             android:layout_weight="4"
+            android:text="X" />
+
+        <Button
+            android:text="219\n소모임실\n(정통)"
+            android:layout_weight="2"
             style="@style/RoomButton" />
         <Button
             android:text="화장실"
-            android:layout_weight="4"
+            android:layout_weight="3"
             style="@style/RoomButton" />
         <Button
-            android:text="stairs"
+            android:text="Stairs"
             android:layout_weight="1"
             style="@style/WhitePlace" />
         
