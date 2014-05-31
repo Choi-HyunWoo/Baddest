@@ -31,7 +31,7 @@
             android:text="화장실,남자샤워실"
             android:layout_weight="2"
             style="@style/RoomButton" />
-        <Button
+        <TextView
             android:text="Elevator"
             android:layout_weight="0"
             style="@style/WhitePlace" />
@@ -41,7 +41,8 @@
     <RelativeLayout 
     	android:layout_width="40dp"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        style="@style/WhitePlace" >
 	    <TextView
 	        android:text="stairs"
 	        style="@style/WhitePlace"
@@ -78,7 +79,7 @@
             android:text="313\n서버실\n(멀티)"
             android:layout_weight="0.5"
             style="@style/RoomButton" />
-        <Button
+        <TextView
             android:text="B동 연결"
             android:layout_weight="0"
             style="@style/WhitePlace" />

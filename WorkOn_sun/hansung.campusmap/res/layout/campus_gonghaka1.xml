@@ -31,7 +31,7 @@
             android:text="100\n휴게실"
             android:layout_weight="1"
             style="@style/RoomButton" />
-        <Button
+        <TextView
             android:text="Elevator"
             android:layout_weight="0"
             style="@style/WhitePlace" />
@@ -41,7 +41,8 @@
     <RelativeLayout 
     	android:layout_width="40dp"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical" 
+        style="@style/WhitePlace" >
 	    <TextView
 	        android:text="stairs"
 	        style="@style/WhitePlace"
@@ -90,7 +91,7 @@
             android:text="경비실"
             android:layout_weight="1"
             style="@style/RoomButton" />
-        <Button
+        <TextView
             android:text="Exit"
             android:layout_weight="0"
             style="@style/WhitePlace" />

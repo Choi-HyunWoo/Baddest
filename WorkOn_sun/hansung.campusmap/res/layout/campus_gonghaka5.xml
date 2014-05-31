@@ -37,7 +37,7 @@
             android:textSize="20px"
             android:layout_weight="3.5"
             style="@style/RoomButton" />
-        <Button
+        <TextView
             android:text="Elevator"
             android:layout_weight="0"
             android:textSize="20px"
@@ -48,7 +48,8 @@
     <RelativeLayout 
     	android:layout_width="40dp"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical" 
+        style="@style/WhitePlace">
 	    <TextView
 	        android:text="stairs"
 	        style="@style/WhitePlace"
@@ -109,7 +110,7 @@
             android:textSize="13dp"
             android:text="517\n경영과학연구실" />
 
-        <Button
+        <TextView
             android:text="B동 연결"
             android:layout_weight="0"
             style="@style/WhitePlace" />
