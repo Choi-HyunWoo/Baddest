@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            style="@style/RoomButton"
+            android:layout_weight="1"
+            android:textSize="20px"
+            android:text="510\n공학인증센터 문서고" />
+
+        <Button
+            android:text="500\n시뮬레이션연구실\n(산경)"
+            android:layout_weight="1"
+            android:textSize="20px"
+            style="@style/RoomButton" />
+        <Button
+            android:text="501\n인간공학연구실\n(산경)"
+            android:layout_weight="1"
+            android:textSize="20px"
+            style="@style/RoomButton" />
+        <Button
+            android:text="502\n품질관리실험실\n(산경)"
+            android:layout_weight="2.5"
+            android:textSize="20px"
+            style="@style/RoomButton" />
+        <Button
+            android:text="503\n디지털신호처리실습실\n(기계)"
+            android:textSize="20px"
+            android:layout_weight="3.5"
+            style="@style/RoomButton" />
+        <TextView
+            android:text="Elevator"
+            android:layout_weight="0"
+            android:textSize="20px"
+            style="@style/WhitePlace" />
+        
+    </LinearLayout>
+
+    <RelativeLayout 
+    	android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        style="@style/WhitePlace">
+	    <TextView
+	        android:text="stairs"
+	        style="@style/WhitePlace"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true" />
+	    <TextView
+	        android:text="stairs"
+	        style="@style/WhitePlace"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true" />
+	</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:text="504\n공학교육개발센터"
+            android:textSize="13dp"
+            android:layout_weight="1"
+            style="@style/RoomButton" />
+
+        <Button
+            style="@style/RoomButton"
+            android:layout_weight="3"
+            android:textSize="13dp"
+            android:text="505\n전산설계실\n(기계)" />
+
+        <Button
+            android:text="506\n제조공학실험실\n(산경)"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            style="@style/RoomButton" />
+        <Button
+            android:text="507\n통계분석실험실\n(산경)"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            style="@style/RoomButton" />
+        <Button
+            android:text="508\n산업정보학연구실\n(산경)"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            style="@style/RoomButton" />
+
+        <Button
+            style="@style/RoomButton"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="509\n고객전략연구실\n(산경)" />
+
+        <Button
+            style="@style/RoomButton"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="517\n경영과학연구실" />
+
+        <TextView
+            android:text="B동 연결"
+            android:layout_weight="0"
+            style="@style/WhitePlace" />
+        
+    </LinearLayout>
+</LinearLayout>
