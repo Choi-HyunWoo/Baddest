@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename compilation unit &apos;org.androidtown.sqlitetest.DateBaseTest.java&apos; to &apos;DataBaseTest.java&apos;&#x0D;&#x0A;- Original project: &apos;SQLiteTest&apos;&#x0D;&#x0A;- Original element: &apos;org.androidtown.sqlitetest.DateBaseTest.java&apos;&#x0D;&#x0A;- Renamed element: &apos;org.androidtown.sqlitetest.DataBaseTest.java&apos;" description="Rename compilation unit &apos;DateBaseTest.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;org.androidtown.sqlitetest{DateBaseTest.java" name="DataBaseTest.java" references="false" stamp="1401497707009" version="1.0"/>
-</session>
