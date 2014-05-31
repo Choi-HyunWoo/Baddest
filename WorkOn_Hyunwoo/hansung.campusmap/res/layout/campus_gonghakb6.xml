@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        <Button
+            android:text="613\n강의실\n(기계)"
+            android:layout_weight="3"
+            style="@style/RoomButton" />
+        <Button
+            android:text="612-2\n기계시스템공학\n스터디실"
+            android:layout_weight="1"
+            style="@style/RoomButton" />
+        <Button
+            android:text="612\n메카트로닉스 실험실\n(기계)"
+            android:layout_weight="3"
+            style="@style/RoomButton" />
+        <Button
+            android:text="611\n재료실험실\n(기계)"
+            android:layout_weight="1"
+            style="@style/RoomButton" />
+    </LinearLayout>
+
+    
+   	<RelativeLayout 
+    	android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"  >
+	    <Button
+	        android:text="618\n실습\n기자재실"
+	        android:textSize="25px"
+	        style="@style/RoomButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true" />
+	</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:text="X"
+            android:layout_weight="4"
+            style="@style/RoomButton" />
+
+        <Button
+            android:text="614\n기계제작실습실\n(기계)"
+            android:layout_weight="2"
+            style="@style/RoomButton" />
+
+        <Button
+            android:text="화장실"
+            android:layout_weight="3"
+            style="@style/RoomButton" />
+
+        <Button
+            android:text="Stairs"
+            android:layout_weight="1"
+            style="@style/WhitePlace" />
+        
+    </LinearLayout>
+</LinearLayout>
