@@ -36,14 +36,19 @@ public final class R {
         public static final int action_settings=0x7f090000;
     }
     public static final class layout {
-        public static final int campus_gonghakab1=0x7f030000;
-        public static final int campus_gonghakb1=0x7f030001;
-        public static final int campus_gonghakb2=0x7f030002;
-        public static final int campus_gonghakb3=0x7f030003;
-        public static final int campus_gonghakb4=0x7f030004;
-        public static final int campus_gonghakb5=0x7f030005;
-        public static final int campus_gonghakb6=0x7f030006;
-        public static final int campus_gonghakbb1=0x7f030007;
+        public static final int campus_gonghaka0=0x7f030000;
+        public static final int campus_gonghaka1=0x7f030001;
+        public static final int campus_gonghaka2=0x7f030002;
+        public static final int campus_gonghaka3=0x7f030003;
+        public static final int campus_gonghaka4=0x7f030004;
+        public static final int campus_gonghaka5=0x7f030005;
+        public static final int campus_gonghakb0=0x7f030006;
+        public static final int campus_gonghakb1=0x7f030007;
+        public static final int campus_gonghakb2=0x7f030008;
+        public static final int campus_gonghakb3=0x7f030009;
+        public static final int campus_gonghakb4=0x7f03000a;
+        public static final int campus_gonghakb5=0x7f03000b;
+        public static final int campus_gonghakb6=0x7f03000c;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -66,10 +71,11 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070005;
+        public static final int AppBaseTheme=0x7f070006;
         public static final int BuildingButton=0x7f070000;
-        public static final int FloorButton=0x7f070004;
+        public static final int FloorButton=0x7f070005;
         public static final int MapOthers=0x7f070001;
+        public static final int NullPlace=0x7f070004;
         public static final int RoomButton=0x7f070002;
         public static final int WhitePlace=0x7f070003;
     }

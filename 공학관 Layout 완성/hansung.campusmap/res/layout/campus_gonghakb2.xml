@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:text="216\n프로그래밍 실습실 (정통)"
+            android:layout_weight="4"
+            style="@style/RoomButton" />
+        <Button
+            android:text="214\n통신 실습실 (정통)"
+            android:layout_weight="2"
+            style="@style/RoomButton" />
+        <Button
+            android:text="211\n디지털시스템\n실험실 (정통)"
+            android:layout_weight="2"
+            style="@style/RoomButton" />
+        <Button
+            android:text="220\n세미나실\n(정통)"
+            android:layout_weight="2"
+            style="@style/RoomButton" />
+        
+    </LinearLayout>
+
+    <RelativeLayout 
+    	android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+	</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/NullPlace"
+            android:layout_weight="4" />
+
+        <Button
+            android:text="219\n소모임실\n(정통)"
+            android:layout_weight="2"
+            style="@style/RoomButton" />
+        <Button
+            android:text="화장실"
+            android:layout_weight="3"
+            style="@style/RoomButton" />
+        <Button
+            android:text="Stairs"
+            android:layout_weight="1"
+            style="@style/WhitePlace" />
+        
+    </LinearLayout>
+</LinearLayout>
