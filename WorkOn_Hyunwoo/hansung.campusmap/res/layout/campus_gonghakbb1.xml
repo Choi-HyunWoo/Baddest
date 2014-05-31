@@ -49,10 +49,9 @@
         android:layout_weight="1"
         android:orientation="vertical" >
 
-        <Button
-            android:text="X"
+        <TextView
             android:layout_weight="4"
-            style="@style/RoomButton" />
+            style="@style/NullPlace" />
 
         <Button
             android:text="B107\n공과대학\n학생회실"

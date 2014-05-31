@@ -42,10 +42,9 @@
         android:layout_weight="1"
         android:orientation="vertical" >
 
-        <Button
-            style="@style/RoomButton"
-            android:layout_weight="4"
-            android:text="X" />
+        <TextView
+            style="@style/NullPlace"
+            android:layout_weight="4" />
 
         <Button
             android:text="219\n소모임실\n(정통)"

@@ -69,10 +69,9 @@
         android:layout_weight="1"
         android:orientation="vertical" >
 
-        <Button
-            android:text="X"
+        <TextView
             android:layout_weight="4"
-            style="@style/RoomButton" />
+            style="@style/NullPlace" />
         <Button
             android:text="119\n멀티미디어공학과\n사무실"
             android:layout_weight="2"
